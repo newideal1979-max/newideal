@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0F172A;
+  --navy-light: #1E293B;
+  --navy-lighter: #334155;
+  --gold: #D4AF37;
+  --gold-light: #F0D060;
+  --gold-muted: #B8960C;
+  --white: #F8FAFC;
+  --bg-dark: #020617;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #020617;
+  color: #F8FAFC;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #020617; }
+::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #F0D060; }
+
+/* Selection */
+::selection { background: rgba(212, 175, 55, 0.3); color: #F8FAFC; }
+
+@layer components {
+  /* Glassmorphism */
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10;
+  }
+
+  .glass-dark {
+    @apply bg-navy/80 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-gold {
+    @apply bg-gold/10 backdrop-blur-md border border-gold/20;
+  }
+
+  /* Premium Button */
+  .btn-gold {
+    @apply relative overflow-hidden bg-gold text-navy font-heading font-semibold px-8 py-3.5 rounded-full
+           transition-all duration-300 hover:shadow-gold-lg hover:scale-105 active:scale-95;
+  }
+
+  .btn-outline {
+    @apply relative overflow-hidden border-2 border-gold/60 text-gold font-heading font-semibold px-8 py-3.5 rounded-full
+           transition-all duration-300 hover:bg-gold hover:text-navy hover:border-gold hover:shadow-gold;
+  }
+
+  .btn-glass {
+    @apply glass text-white font-heading font-semibold px-8 py-3.5 rounded-full
+           transition-all duration-300 hover:bg-white/10 hover:border-gold/40;
+  }
+
+  /* Section container */
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Gold text gradient */
+  .text-gold-gradient {
+    @apply bg-gradient-to-r from-gold to-gold-light bg-clip-text text-transparent;
+  }
+
+  /* Premium card */
+  .premium-card {
+    @apply glass rounded-2xl p-6 transition-all duration-500
+           hover:bg-white/10 hover:border-gold/30 hover:shadow-gold;
+  }
+
+  /* Section heading */
+  .section-tag {
+    @apply inline-flex items-center gap-2 glass-gold text-gold text-sm font-semibold
+           px-4 py-2 rounded-full mb-4 uppercase tracking-wider;
+  }
+
+  /* Gradient border */
+  .gradient-border {
+    @apply relative before:absolute before:inset-0 before:rounded-2xl before:p-[1px]
+           before:bg-gradient-to-br before:from-gold/40 before:to-transparent;
+  }
+
+  /* Input field */
+  .input-field {
+    @apply w-full glass rounded-xl px-4 py-3 text-white placeholder-white/40
+           focus:outline-none focus:border-gold/60 focus:ring-1 focus:ring-gold/30
+           transition-all duration-300;
+  }
+}
+
+/* Noise texture overlay */
+.noise-bg::before {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Gold shimmer text */
+.shimmer-text {
+  background: linear-gradient(90deg, #D4AF37 0%, #F0D060 25%, #D4AF37 50%, #F0D060 75%, #D4AF37 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Floating particles */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.4);
+  animation: float 8s ease-in-out infinite;
+}
+
+/* Timeline connector */
+.timeline-line::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, #D4AF37, transparent);
+  transform: translateX(-50%);
+}
+
+/* Swiper custom */
+.swiper-pagination-bullet {
+  background: rgba(212, 175, 55, 0.5) !important;
+}
+.swiper-pagination-bullet-active {
+  background: #D4AF37 !important;
+}
+
+/* Dark mode support */
+.light body {
+  background-color: #F8FAFC;
+  color: #0F172A;
+}
