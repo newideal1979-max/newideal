@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Scissors, Heart, Target, BookOpen } from 'lucide-react'
 
 const milestones = [
-  { year: '1975', title: 'Foundation', desc: 'New Ideal opened its doors in the heart of Ahmedabad, Gujarat.' },
+  { year: '1979', title: 'Foundation', desc: 'New Ideal opened its doors in the heart of Ahmedabad, Gujarat.' },
   { year: '1990', title: 'Growth', desc: 'Expanded curriculum to include advanced women\'s designer courses.' },
   { year: '2010', title: 'Scale', desc: 'Over 2,000 students trained. Alumni running successful tailoring businesses.' },
   { year: '2024', title: 'Digital Era', desc: 'Launched online classes to serve students across India.' },
@@ -33,10 +33,10 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-white/65 text-lg leading-relaxed">
                 <p>
-                  In 1975, <span className="text-white font-semibold">New Ideal Stitching and Cutting Institute</span> was born from a simple yet powerful belief — that skill is the greatest equalizer. From a small classroom in Ahmedabad, Gujarat, we began teaching tailoring to those who dreamed of independence through craft.
+                  In 1979, <span className="text-white font-semibold">New Ideal Stitching and Cutting Institute</span> was born from a simple yet powerful belief — that skill is the greatest equalizer. From a small classroom in Ahmedabad, Gujarat, we began teaching tailoring to those who dreamed of independence through craft.
                 </p>
                 <p>
-                  Today, under the expert guidance of <span className="text-gold font-semibold">Tosif Ahmed Mansuri</span>, the institute continues that legacy. Generations of men and women have walked through our doors with no prior experience and left with a profession, a business, and a future.
+                  Today, under the expert guidance of <span className="text-gold font-semibold">Tosifahmed Mansuri</span>, the institute continues that legacy. Generations of men and women have walked through our doors with no prior experience and left with a profession, a business, and a future.
                 </p>
                 <p>
                   We are not just a stitching class. <span className="text-white font-medium">We are a career launchpad</span> — practical, professional, and proven over fifty years.
