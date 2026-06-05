@@ -94,7 +94,7 @@ export default function About() {
               transition={{ delay: 0.4 }}
               className="mt-6 p-6 rounded-2xl bg-gradient-to-br from-gold/10 to-transparent border border-gold/20"
             >
-              <div className="text-5xl font-heading font-black text-gold-gradient mb-2">50+</div>
+              <div className="text-5xl font-heading font-black text-gold-gradient mb-2">45+</div>
               <div className="text-white font-semibold">Years of Unbroken Legacy</div>
               <div className="text-white/50 text-sm mt-1">Relief Complex, Ahmedabad, Gujarat</div>
             </motion.div>
