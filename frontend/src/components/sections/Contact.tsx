@@ -17,7 +17,7 @@ export default function Contact() {
     setSubmitting(false)
   }
 
-  const whatsappLink = `https://wa.me/919876543210?text=${encodeURIComponent("Hello! I'm interested in enrolling at New Ideal Stitching Institute. Please share details.")}`
+  const whatsappLink = `https://wa.me/917383249007?text=${encodeURIComponent("Hello! I'm interested in enrolling at New Ideal Stitching Institute. Please share details.")}`
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
@@ -56,7 +56,7 @@ export default function Contact() {
               {
                 icon: MapPin,
                 title: 'Visit Us',
-                content: 'Relief Complex, near GPO, Salahpas Road, Ahmedabad, Gujarat',
+                content: '422 4th floor, Relief Shopping Center, Nr GPO, S V College Road, Relief Road, Ahmedabad 380001',
                 sub: 'Open Mon–Sat, 9 AM – 7 PM',
                 color: 'text-gold',
                 bg: 'bg-gold/10 border-gold/20',
@@ -64,26 +64,26 @@ export default function Contact() {
               {
                 icon: Phone,
                 title: 'Call Us',
-                content: '+91 98765 43210',
+                content: '+91 73832 49007',
                 sub: 'Available 9 AM – 8 PM',
                 color: 'text-green-400',
                 bg: 'bg-green-500/10 border-green-500/20',
-                href: 'tel:+919876543210',
+                href: 'tel:+917383249007',
               },
               {
                 icon: Mail,
                 title: 'Email Us',
-                content: 'info@newideal.in',
+                content: 'newideal1979@gmail.com',
                 sub: 'Reply within 24 hours',
                 color: 'text-blue-400',
                 bg: 'bg-blue-500/10 border-blue-500/20',
-                href: 'mailto:info@newideal.in',
+                href: 'mailto:newideal1979@gmail.com',
               },
               {
                 icon: Clock,
                 title: 'Class Timings',
-                content: 'Morning: 10 AM – 12 PM',
-                sub: 'Evening: 2 PM – 4 PM',
+                content: 'Morning: 10 AM – 1 PM',
+                sub: 'Evening: 2 PM – 6 PM',
                 color: 'text-purple-400',
                 bg: 'bg-purple-500/10 border-purple-500/20',
               },
@@ -118,15 +118,7 @@ export default function Contact() {
 
             {/* Google Maps embed */}
             <div className="rounded-2xl overflow-hidden border border-white/10 h-52">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.879!2d72.5714!3d23.0225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3MsKwMzQnMTcuMiJF!5e0!3m2!1sen!2sin!4v1234567890"
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7344.004698104489!2d72.57165689668422!3d23.023685966691794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84373aaaaaab%3A0x12d7dfb906da888d!2sNew%20Ideal%20Tailoring%20And%20Cutting%20Institute!5e0!3m2!1sen!2sin!4v1780638175759!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </div>
           </motion.div>
 
